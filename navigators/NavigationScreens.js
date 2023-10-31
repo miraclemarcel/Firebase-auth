@@ -5,11 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../screens/login';
 import SignUp from '../screens/signup';
 import Home from '../screens/home';
-import ResetPassword from '../screens/resetPassword/resetPassword';
-import ResetOtp from '../screens/resetPassword/ResetOtp';
-import CreateNewPaasword from '../screens/resetPassword/CreateNewPaasword';
 
-import { Text, View } from 'react-native';
 
 const Stack = createStackNavigator();
 
@@ -22,9 +18,6 @@ function AuthStack () {
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="SignUp" component={SignUp} />
       <Stack.Screen name="Login" component={Login}  />
-      <Stack.Screen name="ResetPassword" component={ResetPassword} />
-      <Stack.Screen name="ResetOtp" component={ResetOtp} />
-      <Stack.Screen name="CreateNewPaasword" component={CreateNewPaasword} />
     </Stack.Navigator>
   );
 }
